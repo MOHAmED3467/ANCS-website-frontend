@@ -297,41 +297,6 @@ const openAuth = (type) => emit('open-auth', type)
     </div>
   </section>
 
-  <section class="book">
-    <h2>📚 Graduation Project Documentation</h2>
-
-    <p class="book-intro">
-      Comprehensive technical documentation of the ANCS platform, including
-      architecture design, implementation details, AI integration strategies,
-      and network automation workflows. Perfect for students, educators, and
-      developers seeking to understand modern network configuration systems.
-    </p>
-
-    <div class="book-container">
-      <div class="book-content">
-        <h3>ANCS Graduation Book</h3>
-        <p>
-          A complete technical guide covering the design and implementation of
-          the Automated Network Configuration & Orchestration System. This
-          document details our journey from concept to production-ready platform,
-          including AI integration, GNS3 networking, multi-vendor device support,
-          and real-world deployment strategies.
-        </p>
-        <ul class="book-features">
-          <li>✅ Complete system architecture and design patterns</li>
-          <li>✅ AI/ML integration with Gemini LLM</li>
-          <li>✅ GNS3 network simulation workflows</li>
-          <li>✅ Multi-vendor device management (Cisco, Huawei)</li>
-          <li>✅ Real-world case studies and deployment scenarios</li>
-          <li>✅ Security best practices and encryption strategies</li>
-        </ul>
-        <a href="/ANCS-graduation-book.pdf" class="btn primary" download>
-          📥 Download PDF (2MB)
-        </a>
-      </div>
-    </div>
-  </section>
-
   <section class="cta">
     <h2>Start Automating Your Network Today</h2>
     <div class="cta-buttons">
@@ -481,17 +446,6 @@ p { color: var(--text-muted, #cbd5e1); }
   font-size: 16px;
 }
 /* BOOK */
-.book { background: var(--body-bg); }
-.book-intro { max-width: 800px; margin: auto; line-height: 1.8; font-size: 16px; margin-bottom: 50px; }
-.book-container { max-width: 900px; margin: auto; }
-.book-content { background: var(--card-bg-solid); padding: 40px; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,.3); transition: .3s; }
-.book-content:hover { transform: translateY(-6px); }
-.book-content h3 { color: #42a5f5; font-size: 28px; margin-bottom: 16px; }
-.book-content > p { line-height: 1.8; margin-bottom: 24px; }
-.book-features { list-style: none; padding: 0; margin: 24px 0; text-align: left; max-width: 500px; margin-left: auto; margin-right: auto; }
-.book-features li { padding: 10px 0; color: var(--text-muted); font-size: 15px; }
-.book-features li:before { content: '✓ '; color: #42a5f5; font-weight: bold; margin-right: 8px; }
-.book-content .btn { margin-top: 20px; display: inline-block; font-size: 15px; }
 /* CTA */
 .cta { background: var(--hero-bg-gradient); }
 .cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
