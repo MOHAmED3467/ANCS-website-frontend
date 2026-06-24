@@ -48,7 +48,7 @@ const isLoggedIn = computed(() => authStore.isLoggedIn)
               </div>
               <!-- لو logged in — يظهر أزرار التحميل -->
               <template v-else>
-                <a href="/ANCS.exe" class="btn primary" download>
+                <a href="https://github.com/zyada7med2/ANCS/releases/download/v2.3.1/ANCS.exe" class="btn primary" download>
                   <i class="fab fa-windows"></i>
                   Download for Windows
                 </a>
