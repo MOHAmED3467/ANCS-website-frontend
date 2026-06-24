@@ -2,11 +2,10 @@
   <section class="about-page">
     <div class="container">
       <div class="section-header">
-        <span class="subtitle">Deep Dive into ANCS</span>
-        <h1>Revolutionizing Network Management</h1>
+        <span class="subtitle">About ANCS</span>
+        <h1>Network Automation Made Simple</h1>
         <p class="main-desc">
-          Discover ANCS, the ultimate solution for automating network configurations
-          and minimizing human error through advanced AI-driven insights.
+          ANCS is the graduation project platform for planning, validating, and deploying network configurations with reduced risk and better lab productivity.
         </p>
       </div>
       <div class="philosophy-grid">
@@ -14,18 +13,16 @@
           <div class="p-icon"><i class="fas fa-bullseye"></i></div>
           <h3>Technical Vision</h3>
           <p>
-            We aim to transform how network engineers interact with the CLI.
-            Our goal is to convert complex text-based commands into intuitive
-            graphical interfaces, allowing engineers to focus on architecture.
+            We simplify configuration workflows for networking students and operators,
+            turning CLI complexity into guided automation that reduces errors and speeds deployment.
           </p>
         </div>
         <div class="p-card">
           <div class="p-icon blue"><i class="fas fa-shield-alt"></i></div>
           <h3>Why ANCS?</h3>
           <p>
-            ANCS provides a validation layer that analyzes commands before execution,
-            backed by an automated recovery system to restore stability instantly
-            in case of network blackouts.
+            ANCS adds a smart validation layer, secure device connections, and audit-ready history
+            so changes can be deployed confidently and recovered safely.
           </p>
         </div>
       </div>
@@ -39,25 +36,25 @@
             <div class="step-badge">01</div>
             <div class="step-icon"><i class="fas fa-search-nodes"></i></div>
             <h3>Device Discovery</h3>
-            <p>Automatic scanning of GNS3 environments or local networks to identify active devices and IP addresses.</p>
+            <p>Scan lab environments and local networks to register devices, collect interface data, and build inventory automatically.</p>
           </div>
           <div class="step-card">
             <div class="step-badge">02</div>
             <div class="step-icon purple"><i class="fas fa-terminal"></i></div>
             <h3>Smart Scripting</h3>
-            <p>An intelligent editor supporting Cisco and Juniper templates to ensure command accuracy and syntax compatibility.</p>
+            <p>Create configuration workflows with reusable templates and guided command generation for multi-vendor devices.</p>
           </div>
           <div class="step-card">
             <div class="step-badge">03</div>
             <div class="step-icon green"><i class="fas fa-brain"></i></div>
             <h3>AI Validation</h3>
-            <p>Smart pre-execution reviews using machine learning to detect potential technical conflicts within logs.</p>
+            <p>Review proposed changes before deployment to catch syntax issues, conflicts, and unsafe network operations.</p>
           </div>
           <div class="step-card">
             <div class="step-badge">04</div>
             <div class="step-icon orange"><i class="fas fa-rocket"></i></div>
             <h3>Safe Deployment</h3>
-            <p>Secure transmission via SSH/Telnet with an immediate rollback feature in case of connectivity failures.</p>
+            <p>Push verified configurations via SSH/Telnet and keep rollback points for fast recovery.</p>
           </div>
         </div>
       </div>
@@ -68,28 +65,28 @@
         </div>
         <div class="tech-cards-grid">
           <div class="tech-mini-card">
-            <div class="mini-icon"><i class="fab fa-python"></i></div>
-            <h4>Core Engine</h4>
-            <span class="tech-tag">Python & Netmiko</span>
-            <p>Handles secure SSH connections and multi-vendor command execution with high stability.</p>
+            <div class="mini-icon"><i class="fab fa-vuejs"></i></div>
+            <h4>Frontend</h4>
+            <span class="tech-tag">Vue 3 + Vuetify</span>
+            <p>Delivers a responsive and polished interface for managing devices, configurations, and workflows.</p>
           </div>
           <div class="tech-mini-card">
-            <div class="mini-icon"><i class="fas fa-microchip"></i></div>
-            <h4>Intelligence</h4>
-            <span class="tech-tag">Scikit-learn</span>
-            <p>Uses IsolationForest models for proactive anomaly detection and log pattern analysis.</p>
+            <div class="mini-icon"><i class="fas fa-cubes"></i></div>
+            <h4>State & Routing</h4>
+            <span class="tech-tag">Pinia + Vue Router</span>
+            <p>Supports smooth navigation and centralized application state management for a fluid user experience.</p>
           </div>
           <div class="tech-mini-card">
             <div class="mini-icon"><i class="fas fa-user-shield"></i></div>
             <h4>Security</h4>
-            <span class="tech-tag">Cryptography (AES)</span>
-            <p>End-to-end encryption for device credentials using industry-standard Fernet tokens.</p>
+            <span class="tech-tag">Secure Sessions</span>
+            <p>Designed to work with encrypted credentials and safe device connection workflows.</p>
           </div>
           <div class="tech-mini-card">
-            <div class="mini-icon"><i class="fas fa-database"></i></div>
-            <h4>Data Layer</h4>
-            <span class="tech-tag">PostgreSQL / SQL</span>
-            <p>Ensures ACID-compliant storage for configuration history, backups, and device logs.</p>
+            <div class="mini-icon"><i class="fas fa-code"></i></div>
+            <h4>Integration</h4>
+            <span class="tech-tag">SSH / Telnet</span>
+            <p>Focuses on network protocols and automation-ready configuration deployment.</p>
           </div>
         </div>
       </div>
@@ -255,7 +252,7 @@ h1 {
   .tech-cards-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 600px) {
-  .about {
+  .about-page {
     padding: 90px 20px 60px;
   }
   .section-header {
@@ -267,26 +264,20 @@ h1 {
   .section-header p {
     font-size: 14px;
   }
-  .philosophy-card,
-  .tech-card {
+  .p-card,
+  .tech-mini-card,
+  .step-card {
     padding: 20px;
   }
-  .philosophy-card h3,
-  .tech-card h3 {
-    font-size: 14px;
+  .p-card h3,
+  .tech-mini-card h4,
+  .step-card h3 {
+    font-size: 16px;
   }
-  .philosophy-card p,
-  .tech-card p {
-    font-size: 12px;
-  }
-  .workflow-step {
-    padding: 20px;
-  }
-  .workflow-step h4 {
-    font-size: 14px;
-  }
-  .workflow-step p {
-    font-size: 12px;
+  .p-card p,
+  .tech-mini-card p,
+  .step-card p {
+    font-size: 13px;
   }
 }
 </style>

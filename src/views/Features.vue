@@ -2,110 +2,77 @@
   <section class="features">
     <div class="container">
       <div class="section-header">
-        <span class="subtitle">What We Offer</span>
-        <h1>Powerful Features</h1>
-        <p>Everything you need to manage and configure your network infrastructure efficiently</p>
+        <span class="subtitle">Technology Stack</span>
+        <h1>Technology Stack</h1>
+        <p>ANCS is built on tools and protocols designed for networking labs, automation, and secure device access.</p>
       </div>
-      <div class="features-grid">
-        <!-- Device Management -->
+      <div class="tech-icons">
+        <div class="tech-card">🐍 Python</div>
+        <div class="tech-card">💚 Vue.js</div>
+        <div class="tech-card">🖥️ PySide6</div>
+        <div class="tech-card">🗄️ SQLite</div>
+        <div class="tech-card">🔗 GNS3</div>
+        <div class="tech-card">🔌 REST API</div>
+        <div class="tech-card">✨ Gemini AI</div>
+        <div class="tech-card">🔐 Paramiko</div>
+        <div class="tech-card">🔒 SSH</div>
+        <div class="tech-card">📡 Telnet</div>
+        <div class="tech-card">🌐 Cisco IOS</div>
+        <div class="tech-card">⚙️ Huawei VRP</div>
+      </div>
+      <div class="section-header">
+        <h2>Core Features</h2>
+      </div>
+      <div class="feature-grid">
         <div class="feature-card">
-          <div class="card-icon">
-            <i class="fas fa-server"></i>
-          </div>
-          <h3>Device Management</h3>
-          <p>Complete control over your network devices with intuitive interface</p>
-          <ul class="feature-list">
-            <li><i class="fas fa-check"></i> Add new devices (Name, Type, IP, Login Info)</li>
-            <li><i class="fas fa-check"></i> Edit / Delete devices from list</li>
-            <li><i class="fas fa-check"></i> Auto Scan for GNS3 & Local Network devices</li>
-          </ul>
+          <h3>Guided Configuration Wizards</h3>
+          <p>
+            Generate complete Cisco IOS configurations for VLANs,
+            OSPF, EIGRP, RIP, DHCP, ACLs and Inter-VLAN Routing
+            from simple user inputs.
+          </p>
         </div>
-        <!-- Configuration Management -->
         <div class="feature-card">
-          <div class="card-icon blue">
-            <i class="fas fa-cogs"></i>
-          </div>
-          <h3>Configuration Management</h3>
-          <p>Streamlined configuration workflow for network engineers</p>
-          <ul class="feature-list">
-            <li><i class="fas fa-check"></i> Write CLI Commands for specific devices</li>
-            <li><i class="fas fa-check"></i> Edit existing configurations</li>
-            <li><i class="fas fa-check"></i> Save to Database or .txt files</li>
-            <li><i class="fas fa-check"></i> Auto-apply via SSH/Telnet</li>
-            <li><i class="fas fa-check"></i> Backup & Restore configs</li>
-          </ul>
+          <h3>Deep GNS3 Integration</h3>
+          <p>
+            Discover network topologies automatically, manage nodes,
+            synchronize configurations and interact directly with
+            GNS3 through REST APIs.
+          </p>
         </div>
-        <!-- AI Assistant -->
         <div class="feature-card">
-          <div class="card-icon purple">
-            <i class="fas fa-brain"></i>
-          </div>
-          <h3>AI Assistant</h3>
-          <p>Smart troubleshooting with artificial intelligence</p>
-          <ul class="feature-list">
-            <li><i class="fas fa-check"></i> AI Troubleshooter analyzes device logs</li>
-            <li><i class="fas fa-check"></i> Smart suggestions (e.g., "Check VLAN 10 mismatch")</li>
-            <li><i class="fas fa-check"></i> Recommendation System for device types</li>
-          </ul>
+          <h3>AI Network Copilot</h3>
+          <p>
+            AI-powered assistant capable of network discovery,
+            auditing, troubleshooting, deployment and
+            connectivity tracing.
+          </p>
         </div>
-        <!-- Security & Monitoring -->
         <div class="feature-card">
-          <div class="card-icon green">
-            <i class="fas fa-shield-alt"></i>
-          </div>
-          <h3>Security & Monitoring</h3>
-          <p>Enterprise-grade security for your network infrastructure</p>
-          <ul class="feature-list">
-            <li><i class="fas fa-check"></i> Encrypted credentials (Hash + Encryption)</li>
-            <li><i class="fas fa-check"></i> Complete operation logs</li>
-            <li><i class="fas fa-check"></i> Track configuration changes</li>
-          </ul>
+          <h3>Multi-Protocol Communication</h3>
+          <p>
+            Support for SSH, Telnet and Serial connections with
+            intelligent protocol handling.
+          </p>
         </div>
-        <!-- Automation -->
         <div class="feature-card">
-          <div class="card-icon orange">
-            <i class="fas fa-robot"></i>
-          </div>
-          <h3>Automation</h3>
-          <p>Automate repetitive tasks and save time</p>
-          <ul class="feature-list">
-            <li><i class="fas fa-check"></i> Auto Backup every 24 hours</li>
-            <li><i class="fas fa-check"></i> Scheduled configuration tasks</li>
-            <li><i class="fas fa-check"></i> Batch device updates</li>
-          </ul>
+          <h3>Live Configuration Sync</h3>
+          <p>
+            Pull existing configurations from devices and
+            automatically synchronize network state.
+          </p>
         </div>
-        <!-- AI Log Analysis -->
         <div class="feature-card">
-          <div class="card-icon red">
-            <i class="fas fa-chart-line"></i>
-          </div>
-          <h3>AI Log Analysis</h3>
-          <p>Advanced anomaly detection using machine learning</p>
-          <ul class="feature-list">
-            <li><i class="fas fa-check"></i> Store logs in Database/Files</li>
-            <li><i class="fas fa-check"></i> scikit-learn IsolationForest model</li>
-            <li><i class="fas fa-check"></i> Learn normal patterns</li>
-            <li><i class="fas fa-check"></i> Detect unusual behavior</li>
-            <li><i class="fas fa-check"></i> Real-time alerts: "⚠️ Unusual config detected"</li>
-          </ul>
+          <h3>Bulk Deployment</h3>
+          <p>
+            Deploy configurations to multiple devices
+            simultaneously with detailed reporting.
+          </p>
         </div>
       </div>
     </div>
   </section>
 </template>
-⋮----
-<!-- Device Management -->
-⋮----
-<!-- Configuration Management -->
-⋮----
-<!-- AI Assistant -->
-⋮----
-<!-- Security & Monitoring -->
-⋮----
-<!-- Automation -->
-⋮----
-<!-- AI Log Analysis -->
-⋮----
 <style scoped>
 .features {
   min-height: 100vh;
@@ -118,7 +85,32 @@
 }
 .section-header {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+}
+.feature-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  margin-bottom: 60px;
+}
+.stat-box {
+  border: 1px solid rgba(66, 165, 245, 0.18);
+  border-radius: 18px;
+  padding: 24px 20px;
+  background: rgba(66, 165, 245, 0.05);
+  text-align: center;
+}
+.stat-box span {
+  display: block;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+.stat-box p {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin: 0;
 }
 .subtitle {
   display: inline-block;
@@ -145,10 +137,27 @@
   max-width: 600px;
   margin: 0 auto;
 }
-.features-grid {
+.tech-icons {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  margin-bottom: 50px;
+}
+.tech-card {
+  background: var(--card-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  padding: 18px 14px;
+  text-align: center;
+  font-weight: 700;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
+  margin-top: 30px;
 }
 .feature-card {
   background: var(--card-bg);
@@ -248,6 +257,11 @@
 @media (max-width: 1200px) {
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 992px) {
+  .feature-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @media (max-width: 768px) {

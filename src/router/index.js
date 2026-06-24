@@ -9,6 +9,7 @@ import Download  from '../views/Download.vue'
 import AIBot     from '../views/AIBot.vue'
 import Dashboard from '../views/Dashboard.vue'
 import Auth      from '../views/Auth.vue'
+import Book      from '../views/Book.vue'
 import NotFound  from '../views/NotFound.vue'
 
 const routes = [
@@ -19,6 +20,7 @@ const routes = [
   { path: '/team',      component: Team,      meta: { title: 'Team - ANCS' } },
   { path: '/contact',   component: Contact,   meta: { title: 'Contact - ANCS' } },
   { path: '/download',  component: Download,  meta: { title: 'Download - ANCS' } },
+  { path: '/book', component: Book, meta: { title: 'Graduation Book - ANCS' } },
   {
     path: '/dashboard',
     component: Dashboard,

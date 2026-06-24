@@ -23,7 +23,7 @@
             <button class="btn-login" @click="openAuth('login')">Login</button>
             <button class="btn-signup" @click="openAuth('signup')">Sign Up</button>
             <router-link to="/login" class="btn-admin-login" title="Admin Login">
-              <i class="fas fa-shield-alt"></i> Admin
+              <i class="fas fa-user-shield"></i> Admin
             </router-link>
             <router-link to="/download" class="btn-download">
               <i class="fas fa-download"></i> Download
@@ -65,7 +65,7 @@
             <button @click="openAuth('login'); closeMenu()">Login</button>
             <button @click="openAuth('signup'); closeMenu()">Sign Up</button>
             <router-link to="/login" class="mobile-admin-btn" @click="closeMenu">
-              <i class="fas fa-shield-alt"></i> Admin Login
+              <i class="fas fa-user-shield"></i> Admin Login
             </router-link>
           </template>
           <template v-else>
@@ -512,13 +512,27 @@ body {
 .nav-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
 .btn-theme { width: 36px; height: 36px; border-radius: 10px; background: var(--input-bg); border: 1px solid var(--border-color); color: var(--text-muted); font-size: 15px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.25s; flex-shrink: 0; }
 .btn-theme:hover { background: rgba(66,165,245,0.15); color: #42a5f5; border-color: #42a5f5; }
-.btn-login { background: none; border: none; color: var(--text-muted); font-size: 14px; font-weight: 500; cursor: pointer; padding: 8px 16px; border-radius: 8px; transition: all 0.25s; font-family: inherit; }
+.nav-actions i,
+.mobile-actions i,
+.footer-col a i,
+.status-msg i,
+.btn-theme i,
+.btn-admin-login i,
+.btn-download i,
+.btn-dashboard i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+}
+.btn-login { background: none; border: none; color: var(--text-muted); font-size: 14px; font-weight: 500; cursor: pointer; padding: 8px 16px; border-radius: 8px; transition: all 0.25s; font-family: inherit; min-height: 42px; }
 .btn-login:hover { color: var(--text-primary); background: var(--input-bg); }
-.btn-signup { background: rgba(66,165,245,0.1); border: 1px solid rgba(66,165,245,0.4); color: #42a5f5; font-size: 14px; font-weight: 600; cursor: pointer; padding: 8px 18px; border-radius: 8px; transition: all 0.25s; font-family: inherit; }
+.btn-signup { background: rgba(66,165,245,0.1); border: 1px solid rgba(66,165,245,0.4); color: #42a5f5; font-size: 14px; font-weight: 600; cursor: pointer; padding: 8px 18px; border-radius: 12px; transition: all 0.25s; font-family: inherit; min-height: 42px; }
 .btn-signup:hover { background: #42a5f5; color: #fff; }
-.btn-admin-login { background: rgba(239,68,68,0.08); border: 1px solid rgba(239,68,68,0.25); color: #f87171; text-decoration: none; font-size: 13px; font-weight: 600; padding: 7px 14px; border-radius: 8px; transition: all 0.25s; display: flex; align-items: center; gap: 6px; }
+.btn-admin-login { background: rgba(239,68,68,0.08); border: 1px solid rgba(239,68,68,0.25); color: #f87171; text-decoration: none; font-size: 13px; font-weight: 600; padding: 8px 16px; border-radius: 12px; transition: all 0.25s; display: inline-flex; align-items: center; gap: 8px; min-height: 42px; }
 .btn-admin-login:hover { background: #ef4444; color: #fff; border-color: #ef4444; }
-.btn-download { background: linear-gradient(135deg, #0077b6, #0096c7); color: #fff; text-decoration: none; font-size: 14px; font-weight: 600; padding: 9px 20px; border-radius: 8px; transition: all 0.3s; display: flex; align-items: center; gap: 7px; }
+.btn-download { background: linear-gradient(135deg, #0077b6, #0096c7); color: #fff; text-decoration: none; font-size: 14px; font-weight: 600; padding: 10px 20px; border-radius: 12px; transition: all 0.3s; display: inline-flex; align-items: center; gap: 8px; min-height: 42px; }
 .btn-download:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,119,182,0.4); }
 .btn-dashboard { background: rgba(66,165,245,0.1); border: 1px solid rgba(66,165,245,0.3); color: #42a5f5; text-decoration: none; font-size: 14px; font-weight: 600; padding: 8px 16px; border-radius: 8px; transition: all 0.25s; display: flex; align-items: center; gap: 7px; }
 .btn-dashboard:hover { background: #42a5f5; color: #fff; }
@@ -529,7 +543,7 @@ body {
 .mobile-avatar { width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, #42a5f5, #0077b6); color: #fff; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .mobile-user-info span { font-size: 15px; color: #fff; font-weight: 500; }
 .mobile-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; width: 38px; height: 38px; }
-.mobile-toggle span { width: 22px; height: 2px; background: var(--text-muted); border-radius: 2px; transition: all 0.3s ease; transform-origin: center; }
+.mobile-toggle span { width: 22px; height: 2px; background: var(--text-primary); border-radius: 100px; transition: all 0.3s ease; transform-origin: center; }
 .mobile-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
 .mobile-toggle.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .mobile-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }

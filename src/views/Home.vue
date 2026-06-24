@@ -305,7 +305,7 @@ const openAuth = (type) => emit('open-auth', type)
         about the system goals, features, and implementation through the PDF file.
       </p>
       <div class="book-actions">
-        <a href="/ANCS-graduation-book.pdf" target="_blank" class="btn primary">Open Book</a>
+        <a href="https://drive.google.com/file/d/13bB5T7bds6mW7pGl3De8pyImkt5g1wYQ/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn primary">Open Book</a>
         <a href="/ANCS-graduation-book.pdf" download class="btn secondary">Download Book</a>
       </div>
     </div>
