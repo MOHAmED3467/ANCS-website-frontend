@@ -81,15 +81,26 @@ npm run lint
 For support or questions, use the contact page in the app or email the project owner.
 ## Project Team
 Mohamed Ehab Sayed
-Zyad Ahmed Eid Sadek
-Youssef Marei Ali Salem
-Youssef Samir Mohamed Ibrahim
-Alaa Sabry Mahmoud Mohamed
-Ahmed Mahmoud Abdelkarim Ahmed
+
 Mohamed Bandary Saber Bandary
+
+Zyad Ahmed Eid Sadek
+
+Youssef Marei Ali Salem
+
+Youssef Samir Mohamed Ibrahim
+
+Alaa Sabry Mahmoud Mohamed
+
+Ahmed Mahmoud Abdelkarim Ahmed
+
+
 ## Supervisor
 
 Assoc. Prof. Dr. Mohamed Hassan Saad
+
+And
+
 Engineer Esraa
 ## Graduation Project
 
