@@ -79,3 +79,28 @@ npm run lint
 ## Contact
 
 For support or questions, use the contact page in the app or email the project owner.
+## Project Team
+Mohamed Ehab Sayed
+Zyad Ahmed Eid Sadek
+Youssef Marei Ali Salem
+Youssef Samir Mohamed Ibrahim
+Alaa Sabry Mahmoud Mohamed
+Ahmed Mahmoud Abdelkarim Ahmed
+Mohamed Bandary Saber Bandary
+## Supervisor
+
+Assoc. Prof. Dr. Mohamed Hassan Saad
+Engineer Esraa
+## Graduation Project
+
+Faculty of Industry and Energy Technology
+
+Information and Communication Technology Program
+
+New Cairo Technological University
+
+2025 – 2026
+
+## License
+
+This project is developed for educational and research purposes as a graduation project.
