@@ -297,6 +297,20 @@ const openAuth = (type) => emit('open-auth', type)
     </div>
   </section>
 
+  <section class="book">
+    <div class="book-content">
+      <h2>ANCS Graduation Book</h2>
+      <p>
+        The project book is available again on the website. You can read full details
+        about the system goals, features, and implementation through the PDF file.
+      </p>
+      <div class="book-actions">
+        <a href="/ANCS-graduation-book.pdf" target="_blank" class="btn primary">Open Book</a>
+        <a href="/ANCS-graduation-book.pdf" download class="btn secondary">Download Book</a>
+      </div>
+    </div>
+  </section>
+
   <section class="cta">
     <h2>Start Automating Your Network Today</h2>
     <div class="cta-buttons">
@@ -370,7 +384,8 @@ p { color: var(--text-muted, #cbd5e1); }
 .ghost { border: 1px solid rgba(255,255,255,0.25); color: var(--text-muted); background: none; }
 .ghost:hover { border-color: var(--text-secondary); color: var(--text-primary); }
 /* STATS */
-.stats { background: var(--body-bg); }
+.stats { background: rgba(0,0,0,0.15);
+backdrop-filter: blur(8px); }
 .stats-grid { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
 .stat-card { background: var(--card-bg-solid); padding: 30px 40px; border-radius: 10px; transition: 0.3s; min-width: 140px; }
 .stat-card h2 { color: #42a5f5; }
@@ -404,6 +419,12 @@ p { color: var(--text-muted, #cbd5e1); }
 .step p { color: var(--text-muted); }
 /* PREVIEW */
 .preview { background: var(--section-alt-bg); }
+
+.book { background: var(--body-bg); }
+.book-content { max-width: 900px; margin: auto; padding: 60px 0; }
+.book-content h2 { margin-bottom: 18px; color: #42a5f5; }
+.book-content p { max-width: 760px; margin: auto; line-height: 1.8; color: var(--text-muted); }
+.book-actions { margin-top: 24px; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
 
 .screenshots {
   display: flex;
@@ -507,5 +528,19 @@ p { color: var(--text-muted, #cbd5e1); }
   max-width: 850px;
   margin: auto;
   line-height: 1.8;
+}
+[data-theme="dark"] .hero,
+[data-theme="dark"] .overview,
+[data-theme="dark"] .workflow,
+[data-theme="dark"] .problem,
+[data-theme="dark"] .features,
+[data-theme="dark"] .copilot,
+[data-theme="dark"] .why-ancs,
+[data-theme="dark"] .platforms,
+[data-theme="dark"] .tech,
+[data-theme="dark"] .advantages,
+[data-theme="dark"] .preview,
+[data-theme="dark"] .cta {
+  background: transparent !important;
 }
 </style>
