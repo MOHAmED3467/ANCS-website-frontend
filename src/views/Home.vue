@@ -321,7 +321,7 @@ const openExternal = (url) => window.open(url, '_blank')
   <section class="cta">
     <h2>Start Automating Your Network Today</h2>
     <div class="cta-buttons">
-      <button @click="openAuth('login')" class="btn primary">Login</button>
+      
       <button @click="openAuth('signup')" class="btn secondary">Create Free Account</button>
     </div>
   </section>
