@@ -1,3 +1,4 @@
+ANCS Documents
 <script setup>
 import { ref } from 'vue'
 import mainUi from "../assets/main-ui.jpg"
@@ -312,8 +313,8 @@ const openExternal = (url) => window.open(url, '_blank')
         about the system goals, features, and implementation through the PDF file.
       </p>
       <div class="book-actions">
-          <a href="/ANCS-Graduation-Book.pdf" target="_blank" rel="noopener noreferrer" class="btn primary">Open Book</a>
-          <button @click="openExternal('https://drive.google.com/uc?export=download&id=1psJ-ZsMEEzZlpbPGAqzf8Ijt3UKHpsZG')" class="btn secondary">Download Book</button>
+
+          <button @click="openExternal('https://drive.google.com/uc?export=download&id=1psJ-ZsMEEzZlpbPGAqzf8Ijt3UKHpsZG')" class="btn secondary">Open Documents</button>
       </div>
     </div>
   </section>
@@ -321,7 +322,7 @@ const openExternal = (url) => window.open(url, '_blank')
   <section class="cta">
     <h2>Start Automating Your Network Today</h2>
     <div class="cta-buttons">
-      <router-link to="/download" class="btn primary">Download ANCS</router-link>
+      <button @click="openAuth('login')" class="btn primary">Login</button>
       <button @click="openAuth('signup')" class="btn secondary">Create Free Account</button>
     </div>
   </section>
