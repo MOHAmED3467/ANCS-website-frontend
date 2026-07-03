@@ -1,4 +1,3 @@
-ANCS Documents
 <script setup>
 import { ref } from 'vue'
 import mainUi from "../assets/main-ui.jpg"
