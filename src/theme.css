@@ -1,0 +1,127 @@
+/* ═══════════════════════════════════════════════════════════════
+   theme.css — Global Theme Variables for ANCS
+   Import this in main.js: import './theme.css'
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── DARK MODE (default) ──────────────────────────────────────── */
+:root,
+[data-theme="dark"] {
+
+  /* Backgrounds */
+  --body-bg:              #0b1c2c;
+  --hero-bg-gradient:     linear-gradient(180deg, #0b1c2c, #081520);
+  --page-bg-gradient:     linear-gradient(135deg, #0b1c2c 0%, #16293d 100%);
+  --section-alt-bg:       #102b44;
+
+  /* Cards */
+  --card-bg:              rgba(255, 255, 255, 0.04);
+  --card-bg-solid:        #16293d;
+  --card-bg-hover:        rgba(255, 255, 255, 0.07);
+  --card-bg-hover-solid:  #1e3f5f;
+
+  /* Text */
+  --text-primary:         #e8edf2;
+  --text-muted:           rgba(255, 255, 255, 0.7);
+  --text-secondary:       rgba(255, 255, 255, 0.5);
+
+  /* Borders */
+  --border-color:         rgba(255, 255, 255, 0.08);
+
+  /* Nav / Footer (already in App.vue, kept for consistency) */
+  --nav-bg:               rgba(11, 28, 44, 0.7);
+  --nav-bg-scroll:        rgba(11, 28, 44, 0.97);
+  --footer-bg:            #060f18;
+  --modal-bg:             linear-gradient(145deg, #16293d, #0f1f30);
+
+  /* Inputs */
+  --input-bg:             rgba(255, 255, 255, 0.05);
+  --input-border:         rgba(255, 255, 255, 0.1);
+  --input-color:          #fff;
+  --placeholder:          rgba(255, 255, 255, 0.25);
+
+  /* Accent (same in both modes) */
+  --accent:               #42a5f5;
+  --accent-dark:          #0077b6;
+}
+
+/* ── LIGHT MODE ───────────────────────────────────────────────── */
+[data-theme="light"] {
+
+  /* Backgrounds */
+  --body-bg:              #f0f5fa;
+  --hero-bg-gradient:     linear-gradient(180deg, #dce8f5, #c8ddf0);
+  --page-bg-gradient:     linear-gradient(135deg, #e8f0f8 0%, #d4e5f5 100%);
+  --section-alt-bg:       #dce8f5;
+
+  /* Cards */
+  --card-bg:              rgba(255, 255, 255, 0.85);
+  --card-bg-solid:        #ffffff;
+  --card-bg-hover:        rgba(255, 255, 255, 0.95);
+  --card-bg-hover-solid:  #f0f7ff;
+
+  /* Text */
+  --text-primary:         #1a2537;
+  --text-muted:           #4a5568;
+  --text-secondary:       #64748b;
+
+  /* Borders */
+  --border-color:         rgba(0, 0, 0, 0.09);
+
+  /* Nav / Footer */
+  --nav-bg:               rgba(255, 255, 255, 0.85);
+  --nav-bg-scroll:        rgba(255, 255, 255, 0.98);
+  --footer-bg:            #1a2537;
+  --modal-bg:             linear-gradient(145deg, #ffffff, #f0f5fa);
+
+  /* Inputs */
+  --input-bg:             rgba(0, 0, 0, 0.04);
+  --input-border:         rgba(0, 0, 0, 0.12);
+  --input-color:          #1a2537;
+  --placeholder:          rgba(0, 0, 0, 0.3);
+
+  /* Accent */
+  --accent:               #0077b6;
+  --accent-dark:          #005f8f;
+}
+
+/* ── Global resets that use the variables ─────────────────────── */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--body-bg);
+  color: var(--text-primary);
+  transition: background 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Smooth theme transition for all elements */
+*,
+*::before,
+*::after {
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* But DON'T transition transforms/shadows (causes lag on hover) */
+.feature-card,
+.team-card,
+.info-card,
+.download-card,
+.stat-card,
+.platform,
+.tech-card,
+.p-card,
+.step-card,
+.tech-mini-card {
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease !important;
+}
